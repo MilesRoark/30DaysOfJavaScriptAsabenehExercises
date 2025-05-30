@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --heading-text: #fff;
+  --instructions-text: rgb(125, 243, 125);
+  --btn-color: goldenrod;
+  --infotext-color: rgb(255, 255, 255);
+  --errortext-color: red;
+}
+
+body {
+  background: url(Assets/galaxy.gif);
+  font-family: "Caveat", sans-serif;
+}
+
+header {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+header h1 {
+  color: var(--heading-text);
+}
+
+.inputs {
+  height: 70px;
+  width: 450px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 15px;
+  gap: 5px;
+}
+
+.inputs input,
+.inputs select,
+.btn {
+  height: 25px;
+}
+
+.instructions {
+  color: var(--instructions-text);
+  font-size: 1rem;
+}
+
+.btn {
+  width: 90px;
+  background-color: var(--btn-color);
+  font-weight: bolder;
+  transition: all 0.08s ease-in-out;
+}
+
+.inputs select,
+.btn {
+  border-radius: 5px;
+}
+
+.btn:active {
+  transform: translateY(3px) scale(1);
+}
+
+.display {
+  height: 500px;
+  display: flex;
+  margin-top: 50px;
+}
+
+.image {
+  width: 400px;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.image img {
+  height: 50%;
+}
+
+.info {
+  width: 300px;
+  color: var(--infotext-color);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
+}
+
+.info-text {
+  height: 50px;
+  font-size: 2rem;
+}
+
+.weight {
+  text-align: center;
+  width: 170px;
+  font-size: 3rem;
+  align-self: center;
+}
+
+.selection {
+  font-size: 3rem;
+  align-self: flex-end;
+}
+
+.error {
+  color: var(--errortext-color);
+  margin: 50px auto;
+  font-size: 3rem;
+}

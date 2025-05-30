@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How much does it weight on planet X</title>
+    <link rel="stylesheet" href="style9.css" />
+    <script src="script9.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Find out the weight of any object on another planet.</h1>
+    </header>
+    <section class="inputs">
+      <input
+        type="number"
+        class="user-input"
+        id="userInput"
+        min="0"
+        value="0"
+      />
+      <select name="units" id="unit" class="units">
+        <option>Select Unit</option>
+        <option value="pounds">Pounds</option>
+        <option value="kilograms">Kilograms</option>
+        <option value="newtons">Newtons</option>
+      </select>
+      <select name="planets" id="selectPlanet">
+        <option>Select Planet</option>
+        <option value="mercury">Mercury</option>
+        <option value="venus">Venus</option>
+        <option value="moon">Moon</option>
+        <option value="mars">Mars</option>
+        <option value="jupiter">Jupiter</option>
+        <option value="saturn">Saturn</option>
+        <option value="uranus">Uranus</option>
+        <option value="neptune">Neptune</option>
+      </select>
+      <button id="calculateBtn" class="btn">Calculate</button>
+      <p class="instructions">
+        Enter the weight of the object in kg, then select the desired planet.
+      </p>
+    </section>
+    <section class="display" id="result"></section>
+  </body>
+</html>

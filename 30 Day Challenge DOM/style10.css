@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-color: blanchedalmond;
+  --headingText-color: rgb(107, 2, 133);
+  --button-color: goldenrod;
+  --button-text: #19e3e6;
+  --button-text-shadow: 1.5px 1.5px 3px black;
+  --shadow: rgb(0, 0, 0);
+  --text-shadow: 2px 2px 3px rgb(0, 0, 0, 0.4);
+  --percentage-shadow: 1px 1px 3px rgb(0, 0, 0, 0.4);
+  --bar-text: rgb(10, 87, 230);
+}
+
+body {
+  background-color: var(--body-color);
+  font-family: "Caveat", sans-serif;
+}
+
+.heading {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 0.02rem;
+  margin: 0 0 30px;
+}
+
+.heading h1 {
+  font-size: 3rem;
+  color: var(--headingText-color);
+  text-shadow: var(--text-shadow);
+}
+
+.button-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  column-gap: 4rem;
+  height: 50px;
+  padding: 0.5rem;
+  margin: 5px 0 5px;
+}
+
+.button1,
+.button2 {
+  background-color: var(--button-color);
+  color: var(--button-text);
+  padding: 1rem;
+  line-height: 0.1;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  box-shadow: 2px 1px 1px 2px var(--shadow);
+  font-weight: bolder;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  text-shadow: var(--button-text-shadow);
+}
+
+.button1:active,
+.button2:active {
+  transform: translateY(3px);
+}
+
+.info {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  padding: none;
+  gap: 1rem;
+  margin: 40px 0;
+}
+
+.block {
+  display: flex;
+}
+
+.names,
+.bar,
+.numbers,
+.bar-display {
+  text-align: center;
+}
+
+.names {
+  width: 150px;
+}
+
+.lang-names {
+  flex-flow: column nowrap;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bar {
+  width: 400px;
+}
+
+.numbers {
+  width: 200px;
+}
+
+.bar-display {
+  height: 20px;
+  background-color: purple;
+  color: var(--bar-text);
+}
+
+.bar-text {
+  margin-left: 100%;
+  text-shadow: var(--percentage-shadow);
+}

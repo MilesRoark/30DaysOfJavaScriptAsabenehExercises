@@ -1,0 +1,17 @@
+{
+  "name": "30-day-challenge",
+  "version": "1.0.0",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch Day19-Closures.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "custom-console-for-fun": "^1.0.6"
+  }
+}

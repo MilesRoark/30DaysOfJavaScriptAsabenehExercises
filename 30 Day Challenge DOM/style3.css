@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Reenie Beanie", sans-serif;
+  background-color: oklch(27.8% 0.033 256.848);
+}

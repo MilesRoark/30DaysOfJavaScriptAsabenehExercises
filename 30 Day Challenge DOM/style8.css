@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: bisque;
+  --headerText-color: darkblue;
+  --input-color: blue;
+  --result-color: chocolate;
+}
+
+body {
+  font-family: "Caveat", sans-serif;
+  background-color: var(--background-color);
+}
+
+header {
+  text-align: center;
+  margin-top: 10px;
+}
+
+header h1 {
+  font-size: 4rem;
+  color: var(--headerText-color);
+}
+
+header h4 {
+  font-size: 1.5rem;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+  border: 3px solid black;
+  max-width: 800px;
+  height: fit-content;
+  row-gap: 30px;
+}
+
+main .user-input,
+main .output {
+  border: 2px solid black;
+  font-size: 3rem;
+  width: 600px;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 2px 2px 2px 2px black;
+  background: aliceblue;
+}
+
+main .user-input {
+  margin: 40px auto;
+}
+
+main .output {
+  margin: 20px auto;
+}
+
+.word {
+  color: var(--input-color);
+}
+
+.number {
+  color: var(--result-color);
+}
