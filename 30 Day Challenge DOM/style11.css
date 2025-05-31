@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --general-font: "Oleo Script", sans-serif;
+  --background-color: rgb(147, 87, 4);
+  --headerh1-color: rgb(82, 2, 93);
+  --headerHs-color: rgb(222, 243, 69);
+  --headerContent-bgColor: rgba(137, 137, 240, 0.252);
+  --buttons-color: rgb(248, 191, 49);
+  --button-text: rgb(35, 64, 75);
+}
+
+body {
+  font-family: var(--general-font);
+  font-size: 1rem;
+  background-color: var(--background-color);
+}
+
+header {
+  height: 450px;
+  background-image: url(Assets/globe-2.jpg);
+  background-size: cover;
+  background-repeat: none;
+  padding: 5px;
+}
+
+.header-content,
+.quantity,
+.frequency {
+  display: flex;
+  gap: 10px;
+}
+
+.header-content {
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+  height: 80%;
+  background-color: var(--headerContent-bgColor);
+}
+
+.header-content h1 {
+  font-size: 4rem;
+  text-shadow: 2px 1.5px 1.5px;
+  color: var(--headerh1-color);
+}
+
+.quantity,
+.frequency {
+  font-size: 1.5rem;
+}
+
+.quantity,
+.frequency {
+  color: var(--headerHs-color);
+}
+
+.buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.btn1,
+.btn2,
+.order {
+  height: 45px;
+  width: 150px;
+  background-color: var(--buttons-color);
+  border-radius: 30px;
+  box-shadow: -2px 3px 2px black;
+  font-family: var(--general-font);
+  font-weight: bolder;
+  color: var(--button-text);
+  font-size: 1rem;
+}
+
+.searchbar {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+}
+
+.letters {
+  height: 35px;
+  width: 360px;
+  border-radius: 15px;
+  text-align: center;
+  outline: none;
+}
+
+.letters:focus {
+  outline: 1.5px solid blue;
+}
+
+.searchbar img {
+  width: 25px;
+}
