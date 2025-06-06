@@ -39,14 +39,19 @@ header {
   gap: 10px;
 }
 
+.box-content,
+.header-content {
+  background-color: var(--headerContent-bgColor);
+}
+
 .header-content {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
   margin-top: 30px;
-  width: 100%;
-  height: 80%;
-  background-color: var(--headerContent-bgColor);
+  width: 100vw;
+  height: 505px;
+  margin-top: -60px;
 }
 
 .header-content h1 {
@@ -63,27 +68,6 @@ header {
 .quantity,
 .frequency {
   color: var(--headerHs-color);
-}
-
-.buttons {
-  display: flex;
-  flex-flow: row nowrap;
-  gap: 10px;
-  margin-bottom: 15px;
-}
-
-.btn1,
-.btn2,
-.order {
-  height: 45px;
-  width: 150px;
-  background-color: var(--buttons-color);
-  border-radius: 30px;
-  box-shadow: -2px 3px 2px black;
-  font-family: var(--general-font);
-  font-weight: bolder;
-  color: var(--button-text);
-  font-size: 1rem;
 }
 
 .searchbar {
@@ -106,4 +90,50 @@ header {
 
 .searchbar img {
   width: 25px;
+}
+
+.result {
+  height: fit-content;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  column-gap: 10px;
+  row-gap: 5px;
+  padding: 20px;
+}
+
+.box1 {
+  height: 100px;
+  width: 100px;
+  border-radius: 5px;
+  box-shadow: -2px 2px 1px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.box-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  color: #000000;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-shadow: 1px 1px 4px #000, 0 0 2px #fff;
+  overflow: hidden;
 }
