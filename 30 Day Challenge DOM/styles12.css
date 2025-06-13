@@ -12,7 +12,7 @@
   --bg-color: #333;
   --bg-text-color: whitesmoke;
   --logo-font: "Exile", sans-serif;
-  --font: "Kaushan Scrip", sans-serif;
+  --font: "Kaushan Script", sans-serif;
   --logo-color: rgb(244, 155, 12);
   --shadow: black;
   --btn-bg-color: rgba(218, 11, 90, 0.391);
@@ -20,15 +20,23 @@
 }
 
 html {
-  background-color: var(--bg-color);
   color: var(--bg-text-color);
   font-family: var(--font);
+}
+
+body {
+  height: 100vh;
+  background-image: url(Assets/room.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: black;
 }
 
 .nav-list {
@@ -59,6 +67,25 @@ header {
   font-family: var(--logo-font);
   color: var(--logo-color);
   text-shadow: 1px 3px 1.5px var(--shadow);
+}
+
+.hero-container {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #418ee17b;
+}
+
+.hero-container h2 {
+  font-size: 2rem;
+  color: #fada7a;
+  text-shadow: 3px 2px 1px black;
+}
+
+.hero-container img {
+  width: 30em;
 }
 
 .scroll {
