@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Exile&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #333;
+  --bg-text-color: whitesmoke;
+  --logo-font: "Exile", sans-serif;
+  --font: "Kaushan Scrip", sans-serif;
+  --logo-color: rgb(244, 155, 12);
+  --shadow: black;
+  --btn-bg-color: rgba(218, 11, 90, 0.391);
+  --btn-text-color: rgb(99, 208, 244);
+}
+
+html {
+  background-color: var(--bg-color);
+  color: var(--bg-text-color);
+  font-family: var(--font);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+.item {
+  border: 2px solid var(--shadow);
+  background-color: var(--btn-bg-color);
+  box-shadow: 1px 2px 3px var(--shadow);
+  text-shadow: 2px 2px 1.5px var(--shadow);
+  color: var(--btn-text-color);
+  padding: 5px;
+  border-radius: 8px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.logo {
+  font-family: var(--logo-font);
+  color: var(--logo-color);
+  text-shadow: 1px 3px 1.5px var(--shadow);
+}
+
+.scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 0;
+  width: 30px;
+  border-radius: 40px;
+}

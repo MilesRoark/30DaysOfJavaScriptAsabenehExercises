@@ -300,14 +300,23 @@
 // console.log(sumOfArgs(1, 2, 3));
 // sum(1, 2, 3) // -> 6
 // sum(1, 2, 3, 4) // -> 10
-// Writ a function which generates a randomUserIp.
+// Write a function which generates a randomUserIp.
 // example: 172.217.10.23(An IP address is written as four sets of numbers separated by periods, where each number can range from 0 to 255):
-// const randomUserIp = () => {
-//   const octet = () => Math.floor(Math.random() * 255);
-//   const ipArr = Array.from({ length: 4 }, octet);
-//   return ipArr.join(".");
+const randomUserIp = () => {
+  const octet = () => Math.floor(Math.random() * 255);
+  const ipArr = Array.from({ length: 4 }, octet);
+  return ipArr.join(".");
+};
+console.log(randomUserIp());
+// const randomUserIP = () => {
+//   let firstSet = Math.floor(Math.random() * 255);
+//   let secondSet = Math.floor(Math.random() * 255);
+//   let thirdSet = Math.floor(Math.random() * 255);
+//   let fourthSet = Math.floor(Math.random() * 255);
+
+//   return `${firstSet}.${secondSet}.${thirdSet}.${fourthSet}`;
 // };
-// console.log(randomUserIp());
+// console.log(randomUserIP());
 // Write a function which generates a randomMacAddress
 // Example: 62:5E:1A:12:34:56 (you can identify a random MAC address by checking the second character, which is either a 2, 6, A, or E. )
 // const randomMacAddress = () => {
