@@ -17,6 +17,12 @@
   --shadow: black;
   --btn-bg-color: rgba(218, 11, 90, 0.391);
   --btn-text-color: rgb(99, 208, 244);
+  --sections-bg-color1: #418ee13a;
+  --sections-bg-color2: #418ee13a;
+  --data-text-color: rgb(246, 135, 163);
+  --languages-bg-color: rgba(99, 122, 142, 0.333);
+  --languages-text-color: rgb(244, 100, 100);
+  --htext-color: rgb(243, 237, 67);
 }
 
 html {
@@ -67,16 +73,18 @@ header {
 .logo {
   font-family: var(--logo-font);
   color: var(--logo-color);
-  text-shadow: 1px 3px 1.5px var(--shadow);
+  text-shadow: 2px 4px 1.5px var(--shadow);
 }
 
 .hero-container {
+  position: relative;
   width: 100vw;
   height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #418ee13a;
+  background-color: var(--sections-bg-color1);
+  border-bottom: 3px solid rgb(21, 15, 15);
 }
 
 .hero-container h2 {
@@ -93,6 +101,154 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.socials {
+  position: absolute;
+  right: 28%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 4rem;
+  transition: animation 1s ease;
+
+  img {
+    width: 50px;
+    cursor: pointer;
+  }
+
+  .git-icon {
+    animation: movegit 1s ease-in-out;
+    animation: name duration timing-function delay iteration-count direction
+      fill-mode;
+  }
+
+  .linkedin-icon {
+    animation: movein 1s ease-out;
+  }
+  .linktree-icon {
+    animation: movetree 1s ease;
+  }
+}
+
+.git-icon:hover,
+.linkedin-icon:hover,
+.linktree-icon:hover {
+  transform: scale(1.2);
+}
+
+@keyframes movegit {
+  0% {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  75% {
+    transform: translateY(60px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes movein {
+  0% {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  75% {
+    transform: translateY(-60px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes movetree {
+  0% {
+    transform: translateX(300px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  75% {
+    transform: translateX(-60px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.data {
+  position: relative;
+  width: 100vw;
+  height: 25vh;
+  background-color: var(--sections-bg-color2);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20px;
+  gap: 3rem;
+  color: var(--data-text-color);
+  text-shadow: 1px 2px 2px black;
+
+  .quote {
+    margin-left: 5px;
+  }
+
+  .author {
+    margin-left: 15px;
+  }
+
+  .languages {
+    bottom: 0;
+    left: 10px;
+
+    #htext {
+      color: var(--htext-color);
+    }
+  }
+
+  .languages,
+  .daw {
+    position: absolute;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+    padding: 5px;
+    background-color: var(--languages-bg-color);
+    color: var(--languages-text-color);
+
+    font-size: 1.2rem;
+  }
+
+  .daw {
+    bottom: 0;
+    left: 260px;
+
+    .dawname {
+      color: gold;
+    }
+  }
 }
 
 .arrow {
