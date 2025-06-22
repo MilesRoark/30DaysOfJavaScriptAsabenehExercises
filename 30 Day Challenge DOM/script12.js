@@ -7,4 +7,4 @@ function cycleLanguages() {
   htext.innerText = languages[languagesIndex];
 }
 
-setInterval(cycleLanguages, 5000);
+setInterval(cycleLanguages, 3000);
