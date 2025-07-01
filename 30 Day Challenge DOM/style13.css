@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Kaushan+Script&family=Smooch+Sans:wght@100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: blanchedalmond;
+}
+
+h1 {
+  font-family: "Kaushan Script", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  margin: 10px 0;
+  color: rgb(222, 69, 69);
+  text-shadow: 1.5px 1px 1px black;
+}
+
+.inputs {
+  font-family: "Cutive Mono", sans-serif;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 10px 0;
+
+  .inp {
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .inp,
+  .add-player {
+    height: 25px;
+  }
+
+  .add-player {
+    font-family: "Kaushan Script", sans-serif;
+    background-color: gold;
+    border-radius: 5px;
+  }
+}
+
+.error {
+  font-family: "Cutive Mono", sans-serif;
+  color: red;
+  text-align: center;
+}
+
+.data {
+  background-color: chocolate;
+  border: 2px solid black;
+  padding: 7px;
+  margin-top: 10px;
+
+  .player-info {
+    font-family: "Arial Narrow Bold", sans-serif;
+    font-weight: 500;
+    color: #bee5f7;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 8rem;
+
+    .mini-btns {
+      display: flex;
+      gap: 3rem;
+      margin-left: -90px;
+
+      .add,
+      .minus {
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        border: 2px solid black;
+        background-color: white;
+        border-radius: 30px;
+        padding: 5px;
+        color: black;
+        box-shadow: 1.5px 1.5px 2px black;
+      }
+    }
+  }
+}

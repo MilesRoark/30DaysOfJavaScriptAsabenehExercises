@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 28 Project LeaderBoard</title>
+    <link rel="stylesheet" href="style13.css" />
+    <script src="script13.js" defer></script>
+  </head>
+  <body>
+    <h1>Project Leaderboard Challenge</h1>
+    <div class="inputs">
+      <input
+        type="text"
+        class="fname inp"
+        id="firstName"
+        placeholder="First Name"
+      />
+      <input
+        type="text"
+        class="lname inp"
+        id="lastName"
+        placeholder="Last Name"
+      />
+      <input type="text" class="country inp" id="count" placeholder="Country" />
+      <input
+        type="text"
+        class="score inp"
+        id="scores"
+        placeholder="Player Score"
+      />
+      <button class="add-player" id="addPlayer inp" type="button">
+        Add Player
+      </button>
+    </div>
+    <p class="error">All fields required</p>
+    <div class="data">
+      <div class="player-info" id="playerInfo">
+        <p class="pname" id="playerName">Martha Jones</p>
+        <p class="pcountry" id="playerCountry">Finland</p>
+        <p class="pscore" id="playerScore">85</p>
+        <img
+          src="Assets/delete.png"
+          alt="Delete Icon"
+          class="delete"
+          id="deleteicon"
+        />
+        <div class="mini-btns">
+          <p class="add" id="addBtn">+5</p>
+          <p class="minus" id="minusBtn">-5</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
